@@ -199,7 +199,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
         >
           <p>
-            Hello, my name is Durgashashinadh. I&@apossm a fresher with immense
+            Hello, my name is Durgashashinadh. I&apos;m a fresher with immense
             passion and enthusiasm in the field of front-end and web
             development. My key area of expertise lies in developing intuitive
             and aesthetically appealing user interfaces using React.js, Tailwind
@@ -209,7 +209,7 @@ export default function About() {
             sense and helps me create seamless design-to-development workflows.
           </p>
           <p className="mt-4">
-            I&@apossm a quick learner, looking forward to building impactful projects
+            I&apos;m a quick learner, looking forward to building impactful projects
             that combine creativity and functionality. I thrive in collaborative
             environments where I can apply my problem-solving skills. Let&@aposss
             create something amazing together!

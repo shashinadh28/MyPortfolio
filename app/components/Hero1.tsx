@@ -102,7 +102,7 @@ export default function Hero1() {
           <div
             className={`${mulish.className} text-white font-black text-[8vh] md:text-[14vh] leading-tight`}
           >
-            I&@apossm
+            I&apos;m
             <span className="text-[#ffbc38]">
               Durga <br /> Shashinadh
             </span>

@@ -105,7 +105,7 @@ export default function Hero1() {
             I&apos;m
             <span className="text-[#ffbc38]">
               Durga <br /> Shashinadh
-            </span>
+            </span> 
           </div>
 
           {/* Typing Text Animation */}

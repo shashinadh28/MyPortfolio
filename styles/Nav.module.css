@@ -1,0 +1,23 @@
+/* Nav.module.css */
+.navItem {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navItem::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Set to 0 to make the underline touch the text */
+    width: 0;
+    height: 2px; /* Adjust thickness */
+    background-color: #ffbc38;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navItem:hover::after {
+    width: 100%; /* Full underline on hover */
+  }
+  

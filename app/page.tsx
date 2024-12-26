@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Navbar1 from "./components/Navbar1";
 import Hero from "./components/Hero1";
-import { FaHome } from "react-icons/fa";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Social from "./components/Social";
+import Contacts from "./components/Contacts";
 
 
 export default function Home() {
@@ -17,6 +17,9 @@ export default function Home() {
       <About/>
       <Projects/>
       <Skills/>
+      <Social/>
+      <Contacts/>
+      {/* <Terms/> */}
       </div>
       
     </div>

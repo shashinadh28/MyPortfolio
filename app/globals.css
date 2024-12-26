@@ -19,5 +19,20 @@
   .animate-slide-up {
     animation: slide-up 0.5s ease-out forwards;
   }
+  /* Remove margin/padding on html, body, and body children */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: black; /* Ensure the background is black */
+}
+
   
   

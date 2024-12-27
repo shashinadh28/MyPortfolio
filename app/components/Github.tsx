@@ -10,7 +10,7 @@ const kan = Kanit({
 
 export default function Github() {
   return (
-    <div className="bg-black min-h-screen scroll-smooth m-0">
+    <div className="bg-black h-auto scroll-smooth m-0">
       <div
         className="relative mt-36 w-full h-[25rem] bg-cover bg-center"
         style={{ backgroundImage: "url('/bg_1.jpg')" }}
@@ -26,7 +26,13 @@ export default function Github() {
 
         {/* Button */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-12 sm:translate-y-14">
-          <Button />
+          <a
+            href="https://github.com/shashinadh28"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button />
+          </a>
         </div>
       </div>
     </div>

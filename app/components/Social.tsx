@@ -216,36 +216,18 @@ const StyledWrapper = styled.div`
   @media (max-width: 768px) {
     .wrapper {
       padding-top: 20px;
-    }
-
-    .wrapper .icon {
-      width: 50px;
-      height: 50px;
-      font-size: 20px;
-      margin: 10px;
-    }
-
-    .wrapper .tooltip {
-      font-size: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+      gap: 15px; /* Space between items */
+      justify-content: center;
     }
   }
 
   @media (max-width: 480px) {
     .wrapper {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .wrapper .icon {
-      width: 40px;
-      height: 40px;
-      font-size: 16px;
-      margin: 8px;
-    }
-
-    .wrapper .tooltip {
-      font-size: 10px;
+      grid-template-columns: repeat(3, 1fr); /* Same as above for smaller screens */
     }
   }
 `;
+
 

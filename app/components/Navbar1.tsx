@@ -121,23 +121,27 @@ const Navbar1: React.FC = () => {
           <div
             className={`${rubik.className} font-medium relative group cursor-pointer text-white`}
           >
-            <Link href="/about">
+            <Link href={"#about"}>
               About
               <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#ffbc38] transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </div>
-          <div
-            className={`${rubik.className} font-medium relative group cursor-pointer text-white`}
-          >
-            Projects
-            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#ffbc38] transition-all duration-300 group-hover:w-full"></span>
-          </div>
-          <div
-            className={`${rubik.className} font-medium relative group cursor-pointer text-white`}
-          >
-            Contact
-            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#ffbc38] transition-all duration-300 group-hover:w-full"></span>
-          </div>
+          <Link href={"#projects"}>
+            <div
+              className={`${rubik.className} font-medium relative group cursor-pointer text-white`}
+            >
+              Projects
+              <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#ffbc38] transition-all duration-300 group-hover:w-full"></span>
+            </div>
+          </Link>
+          <Link href={"#contact"}>
+            <div
+              className={`${rubik.className} font-medium relative group cursor-pointer text-white`}
+            >
+              Contact
+              <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#ffbc38] transition-all duration-300 group-hover:w-full"></span>
+            </div>
+          </Link>
         </div>
 
         {/* Hamburger Menu Icon for Mobile */}
@@ -152,26 +156,34 @@ const Navbar1: React.FC = () => {
           isMenuOpen ? "max-h-screen opacity-100 scale-y-100" : "max-h-0 opacity-0 scale-y-0"
         }`}
       >
-        <div
-          className={`${rubik.className} font-medium text-[#ffbc38] cursor-pointer my-4 text-[22px]`}
-        >
-          Home
-        </div>
-        <div
-          className={`${rubik.className} font-medium text-white hover:text-[#ffbc38] cursor-pointer my-4 text-[22px]`}
-        >
-          About
-        </div>
-        <div
-          className={`${rubik.className} font-medium text-white hover:text-[#ffbc38] cursor-pointer my-4 text-[22px]`}
-        >
-          Projects
-        </div>
-        <div
-          className={`${rubik.className} font-medium text-white hover:text-[#ffbc38] cursor-pointer my-4 text-[22px]`}
-        >
-          Contact
-        </div>
+        <Link href={"/"}>
+          <div
+            className={`${rubik.className} font-medium text-[#ffbc38] cursor-pointer my-4 text-[22px]`}
+          >
+            Home
+          </div>
+        </Link>
+        <Link href={"#about"}>
+          <div
+            className={`${rubik.className} font-medium text-white hover:text-[#ffbc38] cursor-pointer my-4 text-[22px]`}
+          >
+            About
+          </div>
+        </Link>
+        <Link href={"#projects"}>
+          <div
+            className={`${rubik.className} font-medium text-white hover:text-[#ffbc38] cursor-pointer my-4 text-[22px]`}
+          >
+            Projects
+          </div>
+        </Link>
+        <Link href={"#contact"}>
+          <div
+            className={`${rubik.className} font-medium text-white hover:text-[#ffbc38] cursor-pointer my-4 text-[22px]`}
+          >
+            Contact
+          </div>
+        </Link>
       </div>
     </div>
   );

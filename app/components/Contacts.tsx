@@ -2,35 +2,48 @@
 
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import emailjs from '@emailjs/browser'; // Import EmailJS
 
 const Contacts: React.FC = () => {
   const [backgroundImage, setBackgroundImage] = useState<string>('none');
 
-  // Only set the background image on the client side
   useEffect(() => {
     setBackgroundImage('url("data:image/png;base64,...")'); // Example dynamic background image
   }, []);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
 
-    // Get form data (email, username, message)
+    // Convert form data to an object for EmailJS
     const formValues = {
-      email: formData.get('email'),
-      username: formData.get('username'),
-      message: formData.get('textarea'),
+      email: formData.get('email') as string,
+      username: formData.get('username') as string,
+      message: formData.get('textarea') as string,
     };
 
-    // Log the form data or handle it
-    console.log(formValues);
+    try {
+      // Send email using EmailJS
+      const response = await emailjs.send(
+        'service_ypph824', // Replace with your EmailJS service ID
+        'template_w7wfeqh', // Replace with your EmailJS template ID
+        formValues,
+        'gh3flam-olODwA4qq' // Replace with your EmailJS public key
+      );
+
+      console.log('Email sent successfully:', response);
+      alert('Message sent successfully!');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Failed to send message. Please try again later.');
+    }
   };
 
   return (
     <StyledWrapper backgroundImage={backgroundImage}>
-      <div className="form-container">
+      <div className="form-container" id='contact' >
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email</label>

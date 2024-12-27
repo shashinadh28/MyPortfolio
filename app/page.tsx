@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Social from "./components/Social";
 import Contacts from "./components/Contacts";
 import Navbar1 from "./components/Navbar1";
+import Github from "./components/Github";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <About/>
       <Projects/>
       <Skills/>
+      <Github/>
       <Social/>
       <Contacts/>
       {/* <Terms/> */}

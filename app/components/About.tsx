@@ -143,7 +143,7 @@ export default function About() {
     <div className="bg-black text-white h-auto" >
       <section >
         {/* About Me Section */}
-        <motion.section
+        <motion.section  id="about"
           className="relative bg-black flex justify-center items-center py-10"
           initial={{ opacity: 0, y: 50 }} // Animation starts invisible and down
           whileInView={{ opacity: 1, y: 0 }} // Animates to visible and original position

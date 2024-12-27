@@ -86,7 +86,7 @@ const StyledWrapper = styled.div`
 
 export default function Projects() {
   return (
-    <div className="bg-black py-10">
+    <div className="bg-black py-10 " id='projects'>
       {/* Title Section */}
       <motion.section
         className="relative bg-black flex justify-center items-center py-10"

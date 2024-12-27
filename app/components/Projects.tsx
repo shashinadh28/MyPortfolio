@@ -106,21 +106,40 @@ export default function Projects() {
       {/* Cards Section */}
       <StyledWrapper className="bg-black flex justify-center mt-10">
         <div className="cards">
-          <div className="card">
+          {/* CoffeeBucks project linked to its GitHub repository */}
+          <a
+            href="https://github.com/shashinadh28/CoffeeBucks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
+          >
             <div className="text-overlay">CoffeeBucks</div>
             <img src="/coffeebucks.png" alt="Project 1" />
-          </div>
-          <div className="card">
+          </a>
+
+          {/* WeCure project linked to its GitHub repository */}
+          <a
+            href="https://github.com/shashinadh28/wecure"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
+          >
             <div className="text-overlay">WeCure</div>
             <img src="/weCure.png" alt="Project 2" />
-          </div>
-          <div className="card">
+          </a>
+
+          {/* MRKT.AI project linked to its GitHub repository */}
+          <a
+            href="https://github.com/shashinadh28/MRKT.AI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
+          >
             <div className="text-overlay">MRKT.AI</div>
             <img src="/mrkt.ai.png" alt="Project 3" />
-          </div>
+          </a>
         </div>
       </StyledWrapper>
     </div>
   );
 }
-  

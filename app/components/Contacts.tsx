@@ -1,19 +1,17 @@
-'use client';  // Ensure this is a client-side component
+'use client'; // Ensure this is a client-side component
 
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-const Form = () => {
-  const [backgroundImage, setBackgroundImage] = useState('');
+const Contacts: React.FC = () => {
+  const [backgroundImage, setBackgroundImage] = useState<string>('none');
 
   // Only set the background image on the client side
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setBackgroundImage('url("data:image/png;base64,...")'); // Example dynamic background image
-    }
+    setBackgroundImage('url("data:image/png;base64,...")'); // Example dynamic background image
   }, []);
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const form = event.target as HTMLFormElement;
@@ -26,7 +24,7 @@ const Form = () => {
       message: formData.get('textarea'),
     };
 
-    // You can now log the form data or handle it
+    // Log the form data or handle it
     console.log(formValues);
   };
 
@@ -36,17 +34,36 @@ const Form = () => {
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input required name="email" id="email" type="email" placeholder="Enter your email" />
+            <input
+              required
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+            />
           </div>
 
           <div className="form-group">
             <label htmlFor="username">Username</label>
-            <input required name="username" id="username" type="text" placeholder="Enter your username" />
+            <input
+              required
+              name="username"
+              id="username"
+              type="text"
+              placeholder="Enter your username"
+            />
           </div>
 
           <div className="form-group">
             <label htmlFor="textarea">How can we help you?</label>
-            <textarea required cols={50} rows={10} id="textarea" name="textarea" placeholder="Type your message here" />
+            <textarea
+              required
+              cols={50}
+              rows={10}
+              id="textarea"
+              name="textarea"
+              placeholder="Type your message here"
+            />
           </div>
 
           <button type="submit" className="form-submit-btn">Submit</button>
@@ -54,7 +71,7 @@ const Form = () => {
       </div>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div<{ backgroundImage: string }>`
   display: flex;
@@ -69,7 +86,7 @@ const StyledWrapper = styled.div<{ backgroundImage: string }>`
     width: 500px;
     padding: 40px;
     background: linear-gradient(#212121, #212121) padding-box,
-                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+      linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
     border: 2px solid transparent;
     font-size: 14px;
     font-family: inherit;
@@ -160,4 +177,4 @@ const StyledWrapper = styled.div<{ backgroundImage: string }>`
   }
 `;
 
-export default Form;
+export default Contacts;

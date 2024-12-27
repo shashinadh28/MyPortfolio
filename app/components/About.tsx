@@ -140,107 +140,103 @@ const StyledWrapper = styled.div`
 
 export default function About() {
   return (
-    <div className="bg-black text-white h-auto">
-      {/* About Me Section */}
-      <motion.section
-        className="relative bg-black flex justify-center items-center py-10"
-        initial={{ opacity: 0, y: 50 }} // Animation starts invisible and down
-        whileInView={{ opacity: 1, y: 0 }} // Animates to visible and original position
-        transition={{ duration: 1.2, ease: "easeInOut" }} // Smooth animation with easeInOut
-        viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
-      >
-        {/* Background Text */}
-        <h1 className="absolute text-[10vw] font-bold text-white opacity-10 select-none">
-          About
-        </h1>
-
-        {/* Foreground Text */}
-        <div className="relative z-10 text-center">
-          <h2 className="text-[8vw]  md:text-[4vw] font-bold">About Me</h2>
-        </div>
-      </motion.section>
-
-      {/* Main Content */}
-      <div className="flex flex-col md:flex-row items-center md:ml-20 md:items-start gap-8 px-4 sm:px-8 lg:px-20 py-1">
-        {/* Left Section: Image and Details */}
-        <motion.div
-          className="flex flex-col items-center md:items-start gap-5 w-full md:w-1/3"
-          initial={{ opacity: 0, x: -100 }} // Animation starts invisible and to the left
-          whileInView={{ opacity: 1, x: 0 }} // Animates to visible and original position
+    <div className="bg-black text-white h-auto" >
+      <section >
+        {/* About Me Section */}
+        <motion.section
+          className="relative bg-black flex justify-center items-center py-10"
+          initial={{ opacity: 0, y: 50 }} // Animation starts invisible and down
+          whileInView={{ opacity: 1, y: 0 }} // Animates to visible and original position
           transition={{ duration: 1.2, ease: "easeInOut" }} // Smooth animation with easeInOut
           viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
         >
-          <Image
-            src={"/aboutme.png"}
-            alt={"About Me"}
-            width={4000}
-            height={100}
-            className="h-[40vw] w-[40vw] md:h-[13vw] md:w-[13vw] max-w-xs object-cover rounded-md"
-          />
-          <div className="text-gray-400 text-center md:text-left mb-20">
-            <p>
-              <span className="font-bold text-white">Name:</span> Durgashashinadh
-            </p>
-            <p>
-              <span className="font-bold text-white">Job Role:</span> Front End Developer
-            </p>
-            <p>
-              <span className="font-bold text-white">Address:</span> Hyderabad, India
-            </p>
+          {/* Background Text */}
+          <h1 className="absolute text-[10vw] font-bold text-white opacity-10 select-none">
+            About
+          </h1>
+          {/* Foreground Text */}
+          <div className="relative z-10 text-center">
+            <h2 className="text-[8vw]  md:text-[4vw] font-bold">About Me</h2>
           </div>
-        </motion.div>
-
-        {/* Right Section: Paragraph */}
-        <motion.div
-          className="text-gray-400 text-base md:text-lg max-w-full md:max-w-[60%] leading-relaxed "
-          initial={{ opacity: 0, x: 100 }} // Animation starts invisible and to the right
-          whileInView={{ opacity: 1, x: 0 }} // Animates to visible and original position
+        </motion.section>
+        {/* Main Content */}
+        <div className="flex flex-col md:flex-row items-center md:ml-20 md:items-start gap-8 px-4 sm:px-8 lg:px-20 py-1">
+          {/* Left Section: Image and Details */}
+          <motion.div
+            className="flex flex-col items-center md:items-start gap-5 w-full md:w-1/3"
+            initial={{ opacity: 0, x: -100 }} // Animation starts invisible and to the left
+            whileInView={{ opacity: 1, x: 0 }} // Animates to visible and original position
+            transition={{ duration: 1.2, ease: "easeInOut" }} // Smooth animation with easeInOut
+            viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
+          >
+            <Image
+              src={"/aboutme.png"}
+              alt={"About Me"}
+              width={4000}
+              height={100}
+              className="h-[40vw] w-[40vw] md:h-[13vw] md:w-[13vw] max-w-xs object-cover rounded-md"
+            />
+            <div className="text-gray-400 text-center md:text-left mb-20">
+              <p>
+                <span className="font-bold text-white">Name:</span> Durgashashinadh
+              </p>
+              <p>
+                <span className="font-bold text-white">Job Role:</span> Front End Developer
+              </p>
+              <p>
+                <span className="font-bold text-white">Address:</span> Hyderabad, India
+              </p>
+            </div>
+          </motion.div>
+          {/* Right Section: Paragraph */}
+          <motion.div
+            className="text-gray-400 text-base md:text-lg max-w-full md:max-w-[60%] leading-relaxed "
+            initial={{ opacity: 0, x: 100 }} // Animation starts invisible and to the right
+            whileInView={{ opacity: 1, x: 0 }} // Animates to visible and original position
+            transition={{ duration: 1.2, ease: "easeInOut" }} // Smooth animation with easeInOut
+            viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
+          >
+            <p>
+              Hello, my name is Durgashashinadh. I&apos;m a fresher with immense
+              passion and enthusiasm in the field of front-end and web
+              development. My key area of expertise lies in developing intuitive
+              and aesthetically appealing user interfaces using React.js, Tailwind
+              CSS, and Framer Motion. With a solid foundation of HTML, CSS, and
+              JavaScript, I have great fun bringing ideas to life through clean
+              and functional code. My experience with Figma sharpens my design
+              sense and helps me create seamless design-to-development workflows.
+            </p>
+            <p className="mt-4">
+              I&apos;m a quick learner, looking forward to building impactful projects
+              that combine creativity and functionality. I thrive in collaborative
+              environments where I can apply my problem-solving skills. Let&@aposss
+              create something amazing together!
+            </p>
+          </motion.div>
+        </div>
+        {/* resume start */}
+        <motion.section
+          className="relative bg-black  flex justify-center items-center py-10"
+          initial={{ opacity: 0, y: 50 }} // Animation starts invisible and down
+          whileInView={{ opacity: 1, y: 0 }} // Animates to visible and original position
           transition={{ duration: 1.2, ease: "easeInOut" }} // Smooth animation with easeInOut
           viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
         >
-          <p>
-            Hello, my name is Durgashashinadh. I&apos;m a fresher with immense
-            passion and enthusiasm in the field of front-end and web
-            development. My key area of expertise lies in developing intuitive
-            and aesthetically appealing user interfaces using React.js, Tailwind
-            CSS, and Framer Motion. With a solid foundation of HTML, CSS, and
-            JavaScript, I have great fun bringing ideas to life through clean
-            and functional code. My experience with Figma sharpens my design
-            sense and helps me create seamless design-to-development workflows.
-          </p>
-          <p className="mt-4">
-            I&apos;m a quick learner, looking forward to building impactful projects
-            that combine creativity and functionality. I thrive in collaborative
-            environments where I can apply my problem-solving skills. Let&@aposss
-            create something amazing together!
-          </p>
-        </motion.div>
-      </div>
-
-      {/* resume start */}
-      <motion.section
-        className="relative bg-black  flex justify-center items-center py-10"
-        initial={{ opacity: 0, y: 50 }} // Animation starts invisible and down
-        whileInView={{ opacity: 1, y: 0 }} // Animates to visible and original position
-        transition={{ duration: 1.2, ease: "easeInOut" }} // Smooth animation with easeInOut
-        viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
-      >
-        {/* Background Text */}
-        <h1 className="absolute text-[8vw]  font-bold text-white opacity-10 select-none">
-          Resume 
-        </h1>
-
-        {/* Foreground Text */}
-        <div className="relative z-10 text-center">
-          <h2 className="text-[8vw] md:text-[3vw] font-bold">Resume </h2>
+          {/* Background Text */}
+          <h1 className="absolute text-[8vw]  font-bold text-white opacity-10 select-none">
+            Resume
+          </h1>
+          {/* Foreground Text */}
+          <div className="relative z-10 text-center">
+            <h2 className="text-[8vw] md:text-[3vw] font-bold">Resume </h2>
+          </div>
+        </motion.section>
+        {/* button */}
+        <div className="flex justify-center py-5">
+          <a href="/old_resume.pdf" download><Button /></a>
         </div>
-      </motion.section>
-
-      {/* button */}
-      <div className="flex justify-center py-5">
-        <Button />
-      </div>
-      {/* resume end */}
+        {/* resume end */}
+      </section>
     </div>
   );
 }

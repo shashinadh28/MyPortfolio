@@ -1,10 +1,10 @@
-import Navbar1 from "./components/Navbar1";
 import Hero from "./components/Hero1";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Social from "./components/Social";
 import Contacts from "./components/Contacts";
+import Navbar1 from "./components/Navbar1";
 
 
 export default function Home() {

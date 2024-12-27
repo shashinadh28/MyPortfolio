@@ -2,19 +2,27 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { Rubik, Passion_One } from "next/font/google";
+import Link from "next/link";
 
+// Font configurations
 const passion = Passion_One({
   weight: ["400", "700", "900"],
   subsets: ["latin"],
   display: "swap",
 });
+
 const rubik = Rubik({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
 });
 
-const Checkbox = ({ onClick }) => {
+// Props type for Checkbox
+interface CheckboxProps {
+  onClick: () => void;
+}
+
+const Checkbox: React.FC<CheckboxProps> = ({ onClick }) => {
   return (
     <StyledWrapper>
       <label className="burger" htmlFor="burger">
@@ -30,8 +38,8 @@ const Checkbox = ({ onClick }) => {
 const StyledWrapper = styled.div`
   .burger {
     position: relative;
-    width: 30px; /* Reduced width */
-    height: 20px; /* Reduced height */
+    width: 30px;
+    height: 20px;
     background: transparent;
     cursor: pointer;
     display: block;
@@ -44,9 +52,9 @@ const StyledWrapper = styled.div`
   .burger span {
     display: block;
     position: absolute;
-    height: 3px; /* Reduced line thickness */
+    height: 3px;
     width: 100%;
-    background: #ffbc38; /* Menu line color */
+    background: #ffbc38;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -74,7 +82,7 @@ const StyledWrapper = styled.div`
   .burger input:checked ~ span:nth-of-type(1) {
     transform: rotate(45deg);
     top: 0px;
-    left: 3px; /* Adjust for smaller icon */
+    left: 3px;
   }
 
   .burger input:checked ~ span:nth-of-type(2) {
@@ -84,14 +92,13 @@ const StyledWrapper = styled.div`
 
   .burger input:checked ~ span:nth-of-type(3) {
     transform: rotate(-45deg);
-    top: 20px; /* Adjust for smaller icon */
-    left: 3px; /* Adjust for smaller icon */
+    top: 20px;
+    left: 3px;
   }
 `;
 
-
-export default function Navbar1() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Navbar1: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
     <div className="bg-black px-6 md:px-20 md:py-8 py-4">
@@ -110,11 +117,14 @@ export default function Navbar1() {
             Home
             <span className="absolute left-0 bottom-0 h-[2px] w-full bg-[#ffbc38]"></span>
           </div>
+
           <div
             className={`${rubik.className} font-medium relative group cursor-pointer text-white`}
           >
-            About
-            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#ffbc38] transition-all duration-300 group-hover:w-full"></span>
+            <Link href="/about">
+              About
+              <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#ffbc38] transition-all duration-300 group-hover:w-full"></span>
+            </Link>
           </div>
           <div
             className={`${rubik.className} font-medium relative group cursor-pointer text-white`}
@@ -165,4 +175,6 @@ export default function Navbar1() {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar1;

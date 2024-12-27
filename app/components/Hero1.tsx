@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Mulish } from "next/font/google";
 import { Poppins } from "next/font/google";
+import Link from "next/link";
 
 const pop = Poppins({
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
@@ -119,17 +120,21 @@ export default function Hero1() {
 
           {/* Buttons */}
           <div className="flex flex-col md:flex-row gap-5 md:gap-10 pt-5 items-center">
-            <div className="group relative cursor-pointer p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
-              <span className="translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
-                My Works
-              </span>
-              <div className="flex gap-2 text-stroke-black text-white bg-[#f5c360] z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
-                <span>My Works</span>
-              </div>
-            </div>
-            <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gradient-to-r from-[#fff9e5] to-[#fff4cc] border-2 border-[#e7cb6e] bg-transparent px-6 font-medium text-black transition-all duration-100 [box-shadow:5px_5px_rgb(231_203_110)] hover:translate-x-[3px] hover:translate-y-[3px] hover:[box-shadow:0px_0px_rgb(231_203_110)]">
-              Download CV
-            </button>
+          <Link href="https://github.com/shashinadh28" target="_blank" rel="noopener noreferrer">
+      <div className="group relative cursor-pointer p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
+        <span className="translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
+          My Works
+        </span>
+        <div className="flex gap-2 text-stroke-black text-white bg-[#f5c360] z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
+          <span>My Works</span>
+        </div>
+      </div>
+    </Link>
+            <a href="/old_resume.pdf" download>
+              <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gradient-to-r from-[#fff9e5] to-[#fff4cc] border-2 border-[#e7cb6e] bg-transparent px-6 font-medium text-black transition-all duration-100 [box-shadow:5px_5px_rgb(231_203_110)] hover:translate-x-[3px] hover:translate-y-[3px] hover:[box-shadow:0px_0px_rgb(231_203_110)]">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
 

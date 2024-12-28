@@ -106,37 +106,47 @@ export default function Projects() {
       {/* Cards Section */}
       <StyledWrapper className="bg-black flex justify-center mt-10">
         <div className="cards">
+          {/* House Of Digital project linked to its GitHub repository */}
+          <a
+            href="https://house-of-digital-1.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
+          >
+            <div className="text-overlay">House Of Digital</div>
+            <img src="/House_of_digital.png" alt="Project 1" />
+          </a>
           {/* CoffeeBucks project linked to its GitHub repository */}
           <a
-            href="https://github.com/shashinadh28/CoffeeBucks"
+            href="https://coffee-bucks-xi.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="card"
           >
             <div className="text-overlay">CoffeeBucks</div>
-            <img src="/coffeebucks.png" alt="Project 1" />
+            <img src="/coffeebucks.png" alt="Project 2" />
           </a>
 
           {/* WeCure project linked to its GitHub repository */}
           <a
-            href="https://github.com/shashinadh28/wecure"
+            href="https://wecure-eight.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="card"
           >
             <div className="text-overlay">WeCure</div>
-            <img src="/weCure.png" alt="Project 2" />
+            <img src="/weCure.png" alt="Project 3" />
           </a>
 
           {/* MRKT.AI project linked to its GitHub repository */}
           <a
-            href="https://github.com/shashinadh28/MRKT.AI"
+            href="https://mrkt-ai-shashinadh28s-projects.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="card"
           >
             <div className="text-overlay">MRKT.AI</div>
-            <img src="/mrkt.ai.png" alt="Project 3" />
+            <img src="/mrkt.ai.png" alt="Project 4" />
           </a>
         </div>
       </StyledWrapper>

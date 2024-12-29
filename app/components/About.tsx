@@ -181,10 +181,10 @@ export default function About() {
                 <span className="font-bold text-white">Name:</span> Durgashashinadh
               </p>
               <p>
-                <span className="font-bold text-white">Job Role:</span> Front End Developer
+                {/* <span className="font-bold text-white">Job Role:</span> Front End Developer */}
               </p>
               <p>
-                <span className="font-bold text-white">Address:</span> Hyderabad, India
+                <span className="font-bold text-white">Residence:</span> Hyderabad, India
               </p>
             </div>
           </motion.div>
@@ -233,7 +233,7 @@ export default function About() {
         </motion.section>
         {/* button */}
         <div className="flex justify-center py-5">
-          <a href="/old_resume.pdf" download><Button /></a>
+          <a href="/Durgashashinadh_Resume.pdf" download><Button /></a>
         </div>
         {/* resume end */}
       </section>

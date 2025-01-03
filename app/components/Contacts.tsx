@@ -96,7 +96,7 @@ const StyledWrapper = styled.div<{ backgroundImage: string }>`
   background-size: cover;
 
   .form-container {
-    width: 500px;
+    width: 600px; /* Increased width from 500px to 600px */
     padding: 40px;
     background: linear-gradient(#212121, #212121) padding-box,
       linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;

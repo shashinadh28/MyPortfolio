@@ -233,7 +233,7 @@ export default function About() {
         </motion.section>
         {/* button */}
         <div className="flex justify-center py-5">
-          <a href="/Durgashashinadh_Resume.pdf" download><Button /></a>
+          <a href="/Durgashashinadh_resumee.pdf" download><Button /></a>
         </div>
         {/* resume end */}
       </section>

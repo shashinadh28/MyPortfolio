@@ -130,7 +130,7 @@ export default function Hero1() {
         </div>
       </div>
     </Link>
-            <a href="/Durgashashinadh_Resume.pdf" download>
+            <a href="/Durgashashinadh_resumee.pdf" download>
               <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gradient-to-r from-[#fff9e5] to-[#fff4cc] border-2 border-[#e7cb6e] bg-transparent px-6 font-medium text-black transition-all duration-100 [box-shadow:5px_5px_rgb(231_203_110)] hover:translate-x-[3px] hover:translate-y-[3px] hover:[box-shadow:0px_0px_rgb(231_203_110)]">
                 Download CV
               </button>

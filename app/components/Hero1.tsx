@@ -44,7 +44,7 @@ export default function Hero1() {
 
   useEffect(() => {
     // Typing Animation Logic
-    const typingTexts = ["Web Developer", "UI/UX Designer", "Problem Solver"];
+    const typingTexts = ["Web Developer", "UI/UX Designer", "Software Developer","Data Analyst"];
     let currentIndex = 0;
     let charIndex = 0;
     let typingTimeout: NodeJS.Timeout;

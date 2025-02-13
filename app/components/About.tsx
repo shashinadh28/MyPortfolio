@@ -197,20 +197,17 @@ export default function About() {
             viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
           >
             <p>
-              Hello, my name is Durgashashinadh. I&apos;m a fresher with immense
-              passion and enthusiasm in the field of front-end and web
-              development. My key area of expertise lies in developing intuitive
-              and aesthetically appealing user interfaces using React.js, Tailwind
-              CSS, and Framer Motion. With a solid foundation of HTML, CSS, and
-              JavaScript, I have great fun bringing ideas to life through clean
-              and functional code. My experience with Figma sharpens my design
-              sense and helps me create seamless design-to-development workflows.
+            Hello, my name is Durgashashinadh. I&apos;m a full-stack developer, UI developer, and data analyst with a 
+            deep passion for building seamless digital experiences. My expertise spans front-end and back-end development, 
+            crafting intuitive and aesthetically appealing user interfaces with React.js, Tailwind CSS, and Framer Motion,
+             while also managing back-end logic and databases for scalable applications.
+With a strong foundation in HTML, CSS, JavaScript, and Python, I bring ideas to life through clean, functional, and optimized 
+code. My experience with Figma sharpens my design sense, ensuring smooth design-to-development workflows. Additionally, my skills 
+in SQL, data visualization, and analytics allow me to derive actionable insights from complex datasets, enhancing decision-making processes.
             </p>
             <p className="mt-4">
-              I&apos;m a quick learner, looking forward to building impactful projects
-              that combine creativity and functionality. I thrive in collaborative
-              environments where I can apply my problem-solving skills. Let&@aposss
-              create something amazing together!
+            I&apos;m a quick learner and problem solver, eager to build impactful projects that combine creativity, functionality, and data-driven solutions.
+             I thrive in collaborative environments, where I can contribute my technical expertise while constantly learning and evolving.
             </p>
           </motion.div>
         </div>
